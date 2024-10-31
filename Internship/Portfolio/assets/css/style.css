@@ -1,0 +1,171 @@
+/* =============== GLOBAL =============== */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /*========== Colors ==========*/
+  --bg-color: #070a2d;
+  --font-color: #d5cdce;
+  --link-color: lightblue;
+  --text-color-1: rgba(0, 179, 119, 1);
+  --text-color-2: rgba(214, 255, 127, 1);
+  --headline-color: white;
+  --border:#7b8383;
+}
+
+/* =============== BASE =============== */
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--font-color);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff; 
+  text-decoration: none;
+}
+
+
+/* =============== LAYOUT =============== */
+.header-content,
+.main-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 3rem;
+  flex-direction: column;
+}
+
+/* =============== HEADER =============== */
+.header-content{
+  justify-content: space-between;
+  flex-direction: row;
+}
+header{
+  color:#fff;
+}
+nav a{
+  margin-left:20px;
+}
+nav a:hover{
+  border-bottom:2px solid #fff;
+}
+
+/* =============== HOME =============== */
+#home{
+  padding:50px 0 50px;
+}
+.profile-info{
+  display:flex;
+  align-items:center;
+  gap:0.7rem;
+}
+.text-info{
+  display: flex;
+  justify-content: space-between;
+}
+.text-info h1{
+  border-bottom:2px solid #fff;
+}
+.social-Links{
+  display: flex;
+  gap: 5px;
+}
+.user-bio a{
+  border-bottom: 1px solid #fff;
+}
+.quote-box{
+  padding: 16px;
+  background-color: #838596;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.8); 
+  transition: box-shadow 0.4s ease-in-out;
+}
+.quote-box:hover {
+  background-color: var(--bg-color); 
+}
+
+/* =============== PROJECTS =============== */
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.project-grid {
+  border: 2px solid #06132d;
+  border-radius: 12px;
+  max-width: 40000px; 
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s; 
+}
+
+.project-grid:hover {
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.8); 
+}
+
+.project-link {
+  display: flex;
+  gap: 2px;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.project h3 {
+  text-align: left;
+  color: darkcyan 
+}
+
+
+.project-grid p {
+  text-align: left;
+  font-size: 12px;
+}
+
+.project-languages {
+  display: flex;
+  gap: 8px;
+  font-weight: lighter;
+  font-size: 16px;
+  color: cyan;
+}
+
+.more-projects {
+  box-shadow: 0 0 20px gray; 
+  margin-top: 20px;
+  width: 50%;
+  max-width: 400px; 
+  color: #3366cc;
+  border: 3px solid #fff;
+  border-radius: 12px;
+  padding: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========== BREAKPOINTS =========== */
+@media screen and (min-width:1025px){
+  .project{
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+/* =============== FOOTER =============== */
+footer {
+  padding-top: 50px;
+  padding-bottom: 10px;
+}

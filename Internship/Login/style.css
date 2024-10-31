@@ -1,0 +1,100 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4A90E2, #9013FE);
+}
+
+/* Container Styling */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.form-container h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Input Fields Styling */
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Checkbox and Forgot Password */
+.extra-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.extra-options label {
+    font-size: 14px;
+    color: #666;
+}
+
+.extra-options a {
+    font-size: 14px;
+    color: #4A90E2;
+    text-decoration: none;
+}
+
+.extra-options a:hover {
+    text-decoration: underline;
+}
+
+/* Login Button Styling */
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #3A7BCD;
+}
+
+/* Signup Text */
+.signup-text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 15px;
+}
+
+.signup-text a {
+    color: #9013FE;
+    text-decoration: none;
+    font-weight:
+}
